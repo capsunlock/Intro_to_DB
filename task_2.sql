@@ -32,11 +32,11 @@ CREATE TABLE ORDERS (
     order_id INT PRIMARY KEY,
     customer_id INT,
     order_date DATE NOT NULL,
-    FOREIGN KEY (customer_id) REFERENCES CUSTOMERS(customer_id)
+    FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
 );
 
 -- 5. Table: Order_Details
-CREATE TABLE ORDER_DETAILS (
+CREATE TABLE Order_Details (
     orderdetailid INT PRIMARY KEY,
     order_id INT,
     book_id INT,
