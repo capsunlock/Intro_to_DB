@@ -17,6 +17,12 @@ def create_alx_book_store_database():
     DB_NAME = 'alx_book_store'
     conn = None
     cursor = None
+    # Using IF NOT EXISTS ensures the script does not fail if the DB is already there
+    sql_command = f"CREATE DATABASE IF NOT EXISTS {DB_NAME}"
+    
+    # Execute the command
+    cursor.execute(sql_command)
+
 
     try:
         # 2. Open Connection to the MySQL Server
