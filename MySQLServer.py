@@ -7,11 +7,11 @@ def create_alx_book_store_database():
     database using CREATE DATABASE IF NOT EXISTS.
     """
     # --- 1. CONFIGURATION: Replace these with your MySQL server credentials ---
-    config = {
-        'user': 'your_mysql_user',        # e.g., 'root'
-        'password': 'your_mysql_password',  # e.g., 'password123'
-        'host': 'localhost',              # e.g., '127.0.0.1' or 'localhost'
-        'port': 3306                      # Default MySQL port
+   config = {
+        'user': 'root',               # Try 'root' first
+        'password': '',                 # Try an empty string first
+        'host': 'localhost',
+        'port': 3306
     }
     
     DB_NAME = 'alx_book_store'
