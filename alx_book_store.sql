@@ -1,7 +1,3 @@
---
--- Database: alx_book_store
---
-
 -- 1. Create the database if it does not already exist
 CREATE DATABASE IF NOT EXISTS alx_book_store;
 USE alx_book_store;
