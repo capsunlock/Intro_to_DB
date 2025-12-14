@@ -28,7 +28,7 @@ def create_alx_book_store_database():
 
         # 3. SQL Command to Create Database (handles existing database gracefully)
         # Using IF NOT EXISTS ensures the script does not fail if the DB is already there
-        sql_command = f"CREATE DATABASE IF NOT EXISTS {DB_NAME}"
+        sql_command = f"CREATE DATABASE IF NOT EXISTS alx_book_store"
         
         # Execute the command
         # The success message is tied to the successful execution of the command
